@@ -10,7 +10,6 @@
             margin: 10px;
             padding: 0;
             background-color: #f4f4f4;
-            overflow: hidden;
         }
         header {
             background-color: #333;
@@ -42,16 +41,11 @@
         }
     </style>
     <script>
-        setTimeout(function() {
-            alert("Cargando contenido...");
-        }, 7000); // Aumentando la demora para afectar la carga
-
-        // Simulación de un script pesado que ralentiza el navegador
-        setTimeout(function() {
-            for (let i = 0; i < 500000000; i++) {
-                Math.sqrt(i);
-            }
-        }, 3000);
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                alert("Cargando contenido...");
+            }, 3000); // Reducida la demora para mejorar la experiencia
+        });
     </script>
 </head>
 <body>
@@ -70,4 +64,13 @@
             <img src="https://cdn.pixabay.com/photo/2018/04/15/09/07/analytics-3228704_1280.jpg" alt="Visualización de datos y gráficos">
             <ul>
                 <li><b>Investigación Cuantitativa:</b> Se basa en datos numéricos y análisis estadísticos.</li>
-                <li><b>Investigación Cual
+                <li><b>Investigación Cualitativa:</b> Se enfoca en la observación y análisis de comportamientos y tendencias.</li>
+                <li><b>Investigación Mixta:</b> Combina elementos cuantitativos y cualitativos para obtener una visión más completa.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Métodos de Investigación en Tecnología</p>
+    </footer>
+</body>
+</html>
